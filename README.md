@@ -16,6 +16,7 @@ Projeto construído do evento  Imersao Dev da Alura, em 03/2022.
 
 - HTML
 - CSS
+- -JS
 - Git e Github
 
 ## 💛 Contato
