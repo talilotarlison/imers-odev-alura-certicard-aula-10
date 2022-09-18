@@ -3,7 +3,7 @@
 
 #  imersaodev-alura-portifolio-completo
 ### Imersão Dev Alura Realizada em 03-2022. Aula 10
-![preview](./assets/view.jpg)
+![preview](view.jpg)
 
 >Meu Portfólio Completo, com mudança de tema
 
