@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+html, body {
+    font-family: Ubuntu, Arial;
+    width: 100%;
+    height: 100%;
+}
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #021124;
+    overflow-y: auto;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    padding: 0 15px;
+    z-index: 9997;
+
+}
+#header .profile  img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 8px solid #2c2f3f;
+    border-radius: 50%;
+}
+
+#header .profile h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+}
+#header .profile .social a {
+    font-size: 1rem;
+    background: #212431;
+    color: #ffffff;
+    padding: 0.6rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    transition: 0.3s;
+    text-decoration: none;
+}
+#header .profile .social a:hover {
+    background-color: #149ddd;
+}
+
+.nav-menu {
+    padding: 1.5rem;
+}
+
+.navmenu a,
+.navmenu a:focus {
+    display: flex;
+    color: #a8a9b4;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.navmenu a i,
+.navmenu a:focus i {
+    font-size: 24;
+    padding-right: 0.8rem;
+    color: #6f7180;
+}
+
+nav-menu a:hover,
+.navmenu .active,
+.navmenu .active:focus,
+.navmenu li:hover > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+nav-menu a:hover i,
+.navmenu .active i,
+.navmenu .active:focus i,
+.navmenu li:hover > a i {
+    text-decoration: none;
+    color:#ffffff;
+}
+
+#main {
+    margin-left: 300px;
+}
+
+section#inicio {
+    background-image: url("img/andromeda.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+section#inicio h2{
+    font-size: 5rem    
+}
+
+section#inicio span#subtitule {
+    margin-right: 8rem;
+    font-size: 1.5rem;
+}
+
+.text-shadow {
+    text-shadow: 4px 4px 10px #000000;
+}
+
+section#inicio div#arraste a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+i.menu-mobile {
+    position: fixed;
+    color: #ffffff;
+    background-color: #252c90;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu-active {
+    overflow: hidden;
+}
+
+.nav-menu-active #header {
+    left: 0;
+}
+
+/* Gambiarra*/
+section .container .section-bg {
+    margin-left: auto;
+}
+.section-bg {    
+    background-color: #efefef;
+}
+
+.cv .cv-title{
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #050d18;
+}
+
+.cv .cv-iten {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+}
+.cv .cv-iten h4 {
+    line-height: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+}
+
+.cv .cv-iten h5 {
+    background: #e4edf9;
+    padding: 5px 5px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cv-iten::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #1f5297;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.carousel-control-prev {
+    margin-left: -60px;
+    
+}
+.carousel-control-next {
+    margin-right: -60px; 
+
+}
+
+iframe {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+footer {
+    
+    text-align: center;
+    color: #ffffff;
+    background: url(img/bg.jpg);
+    padding: 140x 0;
+    font-size: 13px;
+    margin: 20px 20px ;
+}
+
+
+@media (max-width: 1080px) {
+    .carousel-control-prev {
+        margin-left: 0;
+        
+    }
+    .carousel-control-next {
+        margin-right: 0; 
+    
+    }
+    #footer {
+        position: static;
+        width: auto;
+        padding: 20px 15px ;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    #header {
+        left: -300px;
+    }
+    i.menu-mobile {
+        display: flex;
+    }
+    
+    #main {
+        margin-left: 0;
+    }
+}
